@@ -1,0 +1,8 @@
+.mySlides 
+{
+display:none;
+height: 450px;
+width: auto;
+   border-style: groove;
+padding: 20px;
+}

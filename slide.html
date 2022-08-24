@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<title>Slide-Show</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="slide.css">
+<body>
+
+<h2 class="w3-center"><u>Books Slide-Show</u></h2>
+
+<div class="w3-content" style="max-width:400px">
+  
+<img class="mySlides" src="https://th.bing.com/th/id/R.9f7c457bcae0102020728e66d09b6137?rik=3KDK5lqwy0bLqQ&riu=http%3a%2f%2fwww.chandigarhcitynews.com%2fwp-content%2fuploads%2f2019%2f02%2fDesigning-Destiny.png&ehk=YqqsEe9P%2br%2f7DKd%2b2aN4TNRRIHl1J7NmeM6xzhTq8NI%3d&risl=&pid=ImgRaw&r=0" style="width:100%">
+  <img class="mySlides" src="https://i.ebayimg.com/images/g/3~UAAOSwakxdJRro/s-l400.jpg" style="width:100%">
+
+<img class="mySlides" src="https://m.media-amazon.com/images/I/410FDXgdR0L.jpg" style="width:100%">
+  <img class="mySlides" src="https://n1.sdlcdn.com/imgs/h/z/7/TRUTH-ETERNAL-THE-HEARTFULNESS-WAY-SDL522538367-1-ca811.jpg" style="width:100%">
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); 
+}
+</script>
+
+</body>
+</html>
